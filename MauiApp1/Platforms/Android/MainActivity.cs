@@ -33,7 +33,7 @@ namespace MauiApp1
             // Change the status bar color
             if (Build.VERSION.SdkInt >= BuildVersionCodes.Lollipop)
             {
-                Window.SetStatusBarColor(Android.Graphics.Color.ParseColor("#fcb607")); // Replace with your desired color
+                Window.SetStatusBarColor(Android.Graphics.Color.ParseColor("#fcb607"));
             }
         }
 

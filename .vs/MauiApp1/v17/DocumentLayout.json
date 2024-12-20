@@ -1,25 +1,25 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\moham\\Desktop\\Github\\MauiApp1\\",
+  "WorkspaceRootPath": "C:\\Users\\moham\\Desktop\\Github\\Fire-Detection-Client\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4024FB7A-F61E-44B4-8424-355040ECCCAE}|MauiApp1\\MauiApp1.csproj|c:\\users\\moham\\desktop\\github\\mauiapp1\\mauiapp1\\platforms\\android\\mainactivity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4024FB7A-F61E-44B4-8424-355040ECCCAE}|MauiApp1\\MauiApp1.csproj|c:\\users\\moham\\desktop\\github\\fire-detection-client\\mauiapp1\\platforms\\android\\mainactivity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4024FB7A-F61E-44B4-8424-355040ECCCAE}|MauiApp1\\MauiApp1.csproj|solutionrelative:mauiapp1\\platforms\\android\\mainactivity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4024FB7A-F61E-44B4-8424-355040ECCCAE}|MauiApp1\\MauiApp1.csproj|c:\\users\\moham\\desktop\\github\\mauiapp1\\mauiapp1\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{4024FB7A-F61E-44B4-8424-355040ECCCAE}|MauiApp1\\MauiApp1.csproj|c:\\users\\moham\\desktop\\github\\fire-detection-client\\mauiapp1\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{4024FB7A-F61E-44B4-8424-355040ECCCAE}|MauiApp1\\MauiApp1.csproj|solutionrelative:mauiapp1\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4024FB7A-F61E-44B4-8424-355040ECCCAE}|MauiApp1\\MauiApp1.csproj|c:\\users\\moham\\desktop\\github\\mauiapp1\\mauiapp1\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{4024FB7A-F61E-44B4-8424-355040ECCCAE}|MauiApp1\\MauiApp1.csproj|c:\\users\\moham\\desktop\\github\\fire-detection-client\\mauiapp1\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{4024FB7A-F61E-44B4-8424-355040ECCCAE}|MauiApp1\\MauiApp1.csproj|solutionrelative:mauiapp1\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4024FB7A-F61E-44B4-8424-355040ECCCAE}|MauiApp1\\MauiApp1.csproj|c:\\users\\moham\\desktop\\github\\mauiapp1\\mauiapp1\\platforms\\android\\backgroundnotificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4024FB7A-F61E-44B4-8424-355040ECCCAE}|MauiApp1\\MauiApp1.csproj|c:\\users\\moham\\desktop\\github\\fire-detection-client\\mauiapp1\\platforms\\android\\backgroundnotificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4024FB7A-F61E-44B4-8424-355040ECCCAE}|MauiApp1\\MauiApp1.csproj|solutionrelative:mauiapp1\\platforms\\android\\backgroundnotificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4024FB7A-F61E-44B4-8424-355040ECCCAE}|MauiApp1\\MauiApp1.csproj|c:\\users\\moham\\desktop\\github\\mauiapp1\\mauiapp1\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4024FB7A-F61E-44B4-8424-355040ECCCAE}|MauiApp1\\MauiApp1.csproj|c:\\users\\moham\\desktop\\github\\fire-detection-client\\mauiapp1\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4024FB7A-F61E-44B4-8424-355040ECCCAE}|MauiApp1\\MauiApp1.csproj|solutionrelative:mauiapp1\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -36,11 +36,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "MainActivity.cs",
-              "DocumentMoniker": "C:\\Users\\moham\\Desktop\\Github\\MauiApp1\\MauiApp1\\Platforms\\Android\\MainActivity.cs",
+              "DocumentMoniker": "C:\\Users\\moham\\Desktop\\Github\\Fire-Detection-Client\\MauiApp1\\Platforms\\Android\\MainActivity.cs",
               "RelativeDocumentMoniker": "MauiApp1\\Platforms\\Android\\MainActivity.cs",
-              "ToolTip": "C:\\Users\\moham\\Desktop\\Github\\MauiApp1\\MauiApp1\\Platforms\\Android\\MainActivity.cs",
+              "ToolTip": "C:\\Users\\moham\\Desktop\\Github\\Fire-Detection-Client\\MauiApp1\\Platforms\\Android\\MainActivity.cs",
               "RelativeToolTip": "MauiApp1\\Platforms\\Android\\MainActivity.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABgAAAA7AAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACMAAABXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-20T23:19:14.818Z",
               "EditorCaption": ""
@@ -49,48 +49,45 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "MainPage.xaml",
-              "DocumentMoniker": "C:\\Users\\moham\\Desktop\\Github\\MauiApp1\\MauiApp1\\MainPage.xaml",
+              "DocumentMoniker": "C:\\Users\\moham\\Desktop\\Github\\Fire-Detection-Client\\MauiApp1\\MainPage.xaml",
               "RelativeDocumentMoniker": "MauiApp1\\MainPage.xaml",
-              "ToolTip": "C:\\Users\\moham\\Desktop\\Github\\MauiApp1\\MauiApp1\\MainPage.xaml",
+              "ToolTip": "C:\\Users\\moham\\Desktop\\Github\\Fire-Detection-Client\\MauiApp1\\MainPage.xaml",
               "RelativeToolTip": "MauiApp1\\MainPage.xaml",
               "ViewState": "AgIAAAkAAAAAAAAAAAAqwDMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-20T23:18:45.098Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-20T23:18:45.098Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "App.xaml",
-              "DocumentMoniker": "C:\\Users\\moham\\Desktop\\Github\\MauiApp1\\MauiApp1\\App.xaml",
+              "DocumentMoniker": "C:\\Users\\moham\\Desktop\\Github\\Fire-Detection-Client\\MauiApp1\\App.xaml",
               "RelativeDocumentMoniker": "MauiApp1\\App.xaml",
-              "ToolTip": "C:\\Users\\moham\\Desktop\\Github\\MauiApp1\\MauiApp1\\App.xaml",
+              "ToolTip": "C:\\Users\\moham\\Desktop\\Github\\Fire-Detection-Client\\MauiApp1\\App.xaml",
               "RelativeToolTip": "MauiApp1\\App.xaml",
               "ViewState": "AgIAABoAAAAAAAAAAAAqwEQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-20T23:17:45.761Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-20T23:17:45.761Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "BackgroundNotificationService.cs",
-              "DocumentMoniker": "C:\\Users\\moham\\Desktop\\Github\\MauiApp1\\MauiApp1\\Platforms\\Android\\BackgroundNotificationService.cs",
+              "DocumentMoniker": "C:\\Users\\moham\\Desktop\\Github\\Fire-Detection-Client\\MauiApp1\\Platforms\\Android\\BackgroundNotificationService.cs",
               "RelativeDocumentMoniker": "MauiApp1\\Platforms\\Android\\BackgroundNotificationService.cs",
-              "ToolTip": "C:\\Users\\moham\\Desktop\\Github\\MauiApp1\\MauiApp1\\Platforms\\Android\\BackgroundNotificationService.cs",
+              "ToolTip": "C:\\Users\\moham\\Desktop\\Github\\Fire-Detection-Client\\MauiApp1\\Platforms\\Android\\BackgroundNotificationService.cs",
               "RelativeToolTip": "MauiApp1\\Platforms\\Android\\BackgroundNotificationService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-20T22:45:05.096Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-20T22:45:05.096Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "MainPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\moham\\Desktop\\Github\\MauiApp1\\MauiApp1\\MainPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\moham\\Desktop\\Github\\Fire-Detection-Client\\MauiApp1\\MainPage.xaml.cs",
               "RelativeDocumentMoniker": "MauiApp1\\MainPage.xaml.cs",
-              "ToolTip": "C:\\Users\\moham\\Desktop\\Github\\MauiApp1\\MauiApp1\\MainPage.xaml.cs",
+              "ToolTip": "C:\\Users\\moham\\Desktop\\Github\\Fire-Detection-Client\\MauiApp1\\MainPage.xaml.cs",
               "RelativeToolTip": "MauiApp1\\MainPage.xaml.cs",
               "ViewState": "AgIAAAcBAAAAAAAAAAAAwBIBAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

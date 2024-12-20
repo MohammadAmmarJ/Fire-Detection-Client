@@ -80098,11 +80098,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\moham\\Desktop\\Github\\MauiApp1\\MauiApp1\\MauiApp1.csproj",
+      "projectUniqueName": "C:\\Users\\moham\\Desktop\\Github\\Fire-Detection-Client\\MauiApp1\\MauiApp1.csproj",
       "projectName": "MauiApp1",
-      "projectPath": "C:\\Users\\moham\\Desktop\\Github\\MauiApp1\\MauiApp1\\MauiApp1.csproj",
+      "projectPath": "C:\\Users\\moham\\Desktop\\Github\\Fire-Detection-Client\\MauiApp1\\MauiApp1.csproj",
       "packagesPath": "C:\\Users\\moham\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\moham\\Desktop\\Github\\MauiApp1\\MauiApp1\\obj\\",
+      "outputPath": "C:\\Users\\moham\\Desktop\\Github\\Fire-Detection-Client\\MauiApp1\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [

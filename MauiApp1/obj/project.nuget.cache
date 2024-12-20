@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "w4ZgQWe3+Lk=",
+  "dgSpecHash": "NWUPzgNOwDA=",
   "success": true,
-  "projectFilePath": "C:\\Users\\moham\\Desktop\\Github\\MauiApp1\\MauiApp1\\MauiApp1.csproj",
+  "projectFilePath": "C:\\Users\\moham\\Desktop\\Github\\Fire-Detection-Client\\MauiApp1\\MauiApp1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\moham\\.nuget\\packages\\communitytoolkit.maui\\9.1.1\\communitytoolkit.maui.9.1.1.nupkg.sha512",
     "C:\\Users\\moham\\.nuget\\packages\\communitytoolkit.maui.core\\9.1.1\\communitytoolkit.maui.core.9.1.1.nupkg.sha512",
