@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="MauiApp1.StatusPage"
+    Title="Status"
+    BackgroundColor="#1E1E1E">
+
+    <ScrollView>
+        <VerticalStackLayout Spacing="20" Padding="20">
+
+            <Label Text="Server Status"
+                   Grid.Row="0"
+                   Style="{StaticResource HeaderLabelStyle}"
+                   HorizontalOptions="Center" />
+
+            <Frame Padding="10" BorderColor="Gray" CornerRadius="10">
+                <VerticalStackLayout Spacing="10">
+                    <Label Text="Server IP:" 
+                           FontAttributes="Bold" 
+                           FontSize="18" 
+                           TextColor="#FFF" />
+                    <Label x:Name="ServerIpLabel" Text="Not Connected"/>
+
+                    <Label Text="Server Connectivity:" 
+                           FontAttributes="Bold" 
+                           FontSize="18" 
+                           TextColor="#FFF" />
+                    <Label x:Name="ServerConnectivityLabel" Text="Unknown"/>
+
+                    <Label Text="Last Detection Status:" 
+                           FontAttributes="Bold" 
+                           FontSize="18" 
+                           TextColor="#FFF" />
+                    
+                    <Label x:Name="LastDetectionLabel" Text="No Data"/>
+
+                    <Label Text="Notification Socket:" 
+                           FontAttributes="Bold" 
+                           FontSize="18" 
+                           TextColor="#FFF" />
+                    
+                    <Label x:Name="NotificationSocketLabel" Text="Not Running"/>
+                </VerticalStackLayout>
+            </Frame>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

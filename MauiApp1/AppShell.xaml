@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell 
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:MauiApp1"
+    x:Class="MauiApp1.AppShell"
+    Shell.BackgroundColor="{StaticResource PageBackgroundColor}"
+    Shell.ForegroundColor="{StaticResource TextPrimaryColor}"
+    Shell.NavBarHasShadow="False"
+    Shell.NavBarIsVisible="False">
+
+    <TabBar>
+        <ShellContent Title="Monitor" Icon="monitor.png" ContentTemplate="{DataTemplate local:MainPage}" />
+        <ShellContent Title="Status" Icon="info.png" ContentTemplate="{DataTemplate local:StatusPage}" />
+    </TabBar>
+
+</Shell>
