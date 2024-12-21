@@ -66,6 +66,16 @@ namespace MauiApp1.Platforms.Android
                 ? FireChannelId
                 : DefaultChannelId;
 
+            // Intent to launch the app's main activity
+            var mainActivityIntent = new Intent(this, typeof(MainActivity));
+            mainActivityIntent.SetFlags(ActivityFlags.ClearTop | ActivityFlags.SingleTop);
+            var mainPendingIntent = PendingIntent.GetActivity(
+                this,
+                0,
+                mainActivityIntent,
+                PendingIntentFlags.UpdateCurrent | PendingIntentFlags.Immutable
+            );
+
             // Adding a "Stop" action to the notification
             var stopIntent = new Intent(this, typeof(BackgroundNotificationService));
             stopIntent.SetAction(ActionStop);
@@ -79,9 +89,10 @@ namespace MauiApp1.Platforms.Android
             return new NotificationCompat.Builder(this, channelId)
                 .SetContentTitle("Fire Detection Alert")
                 .SetContentText(message)
-                .SetSmallIcon(Resource.Drawable.fire) 
+                .SetSmallIcon(Resource.Drawable.fire) // Ensure this icon exists in your project
                 .SetPriority(NotificationCompat.PriorityHigh)
                 .SetAutoCancel(true)
+                .SetContentIntent(mainPendingIntent) // This ensures the notification opens the app
                 .AddAction(
                     new NotificationCompat.Action.Builder(
                         Resource.Drawable.fire,
@@ -90,6 +101,7 @@ namespace MauiApp1.Platforms.Android
                     ).Build())
                 .Build();
         }
+
         //Creates notificcation channels.
         private void CreateNotificationChannels()
         {

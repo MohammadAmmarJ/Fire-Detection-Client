@@ -3,47 +3,146 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="MauiApp1.StatusPage"
-    Title="Status"
-    BackgroundColor="#1E1E1E">
+    Title="Status">
 
-    <ScrollView>
-        <VerticalStackLayout Spacing="20" Padding="20">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <!-- Color Palette -->
+            <Color x:Key="PageBackgroundColor">#1E1E1E</Color>
+            <Color x:Key="PrimaryColor">#007AFF</Color>
+            <Color x:Key="CardBackgroundColor">#2D2D2D</Color>
+            <Color x:Key="TextPrimaryColor">#FFFFFF</Color>
+            <Color x:Key="TextSecondaryColor">#B0B0B0</Color>
+            <Color x:Key="SuccessColor">#34C759</Color>
+            <Color x:Key="WarningColor">#FF9500</Color>
+            <Color x:Key="ErrorColor">#FF3B30</Color>
 
-            <Label Text="Server Status"
-                   Grid.Row="0"
-                   Style="{StaticResource HeaderLabelStyle}"
-                   HorizontalOptions="Center" />
+            <!-- Status Indicator Style -->
+            <Style x:Key="StatusIndicatorStyle" TargetType="Border">
+                <Setter Property="WidthRequest" Value="12"/>
+                <Setter Property="HeightRequest" Value="12"/>
+                <Setter Property="VerticalOptions" Value="Center"/>
+                <Setter Property="StrokeShape" Value="RoundRectangle 6"/>
+                <Setter Property="Margin" Value="0,0,10,0"/>
+            </Style>
 
-            <Frame Padding="10" BorderColor="Gray" CornerRadius="10">
-                <VerticalStackLayout Spacing="10">
-                    <Label Text="Server IP:" 
-                           FontAttributes="Bold" 
-                           FontSize="18" 
-                           TextColor="#FFF" />
-                    <Label x:Name="ServerIpLabel" Text="Not Connected"/>
+            <!-- Header Style -->
+            <Style x:Key="HeaderStyle" TargetType="Label">
+                <Setter Property="FontSize" Value="32"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="TextColor" Value="{StaticResource TextPrimaryColor}"/>
+                <Setter Property="HorizontalOptions" Value="Center"/>
+                <Setter Property="Margin" Value="0,0,0,20"/>
+            </Style>
 
-                    <Label Text="Server Connectivity:" 
-                           FontAttributes="Bold" 
-                           FontSize="18" 
-                           TextColor="#FFF" />
-                    <Label x:Name="ServerConnectivityLabel" Text="Unknown"/>
+            <!-- Label Styles -->
+            <Style x:Key="LabelHeaderStyle" TargetType="Label">
+                <Setter Property="FontSize" Value="16"/>
+                <Setter Property="TextColor" Value="{StaticResource TextSecondaryColor}"/>
+                <Setter Property="Margin" Value="0,10,0,5"/>
+            </Style>
 
-                    <Label Text="Last Detection Status:" 
-                           FontAttributes="Bold" 
-                           FontSize="18" 
-                           TextColor="#FFF" />
-                    
-                    <Label x:Name="LastDetectionLabel" Text="No Data"/>
+            <Style x:Key="LabelValueStyle" TargetType="Label">
+                <Setter Property="FontSize" Value="18"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="TextColor" Value="{StaticResource TextPrimaryColor}"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
 
-                    <Label Text="Notification Socket:" 
-                           FontAttributes="Bold" 
-                           FontSize="18" 
-                           TextColor="#FFF" />
-                    
-                    <Label x:Name="NotificationSocketLabel" Text="Not Running"/>
-                </VerticalStackLayout>
-            </Frame>
+    <ScrollView BackgroundColor="{StaticResource PageBackgroundColor}">
+        <Grid Padding="20" RowSpacing="20">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
 
-        </VerticalStackLayout>
+            <!-- Header -->
+            <VerticalStackLayout Grid.Row="0">
+                <Label Text="System Status"
+                       Style="{StaticResource HeaderStyle}"/>
+                <Label Text="Real-time monitoring dashboard"
+                       TextColor="{StaticResource TextSecondaryColor}"
+                       HorizontalOptions="Center"
+                       Margin="0,0,0,20"/>
+            </VerticalStackLayout>
+
+            <!-- Status Cards -->
+            <VerticalStackLayout Grid.Row="1" Spacing="15">
+                <!-- Server Status Card -->
+                <Border StrokeShape="RoundRectangle 16"
+                        BackgroundColor="{StaticResource CardBackgroundColor}"
+                        Padding="20">
+                    <VerticalStackLayout Spacing="15">
+                        <!-- Server IP Section -->
+                        <VerticalStackLayout>
+                            <Label Text="SERVER IP ADDRESS"
+                                   Style="{StaticResource LabelHeaderStyle}"/>
+                            <Grid ColumnDefinitions="Auto,*">
+                                <Border x:Name="ConnectivityIndicator"
+                                        Style="{StaticResource StatusIndicatorStyle}"
+                                        BackgroundColor="{StaticResource WarningColor}" />
+                                <Label Grid.Column="1"
+                                       x:Name="ServerIpLabel"
+                                       Text="Not Connected"
+                                       Style="{StaticResource LabelValueStyle}"/>
+                            </Grid>
+                        </VerticalStackLayout>
+
+                        <!-- Connectivity Status Section -->
+                        <VerticalStackLayout>
+                            <Label Text="CONNECTIVITY STATUS"
+                                   Style="{StaticResource LabelHeaderStyle}"/>
+                            <Grid ColumnDefinitions="Auto,*">
+                                <Border x:Name="ConnectivityStatusIndicator"
+                                        Style="{StaticResource StatusIndicatorStyle}"
+                                        BackgroundColor="{StaticResource ErrorColor}" />
+                                <Label Grid.Column="1"
+                                       x:Name="ServerConnectivityLabel"
+                                       Text="Disconnected"
+                                       Style="{StaticResource LabelValueStyle}"/>
+                            </Grid>
+                        </VerticalStackLayout>
+
+                        <!-- Last Detection Section -->
+                        <VerticalStackLayout>
+                            <Label Text="LAST DETECTION"
+                                   Style="{StaticResource LabelHeaderStyle}"/>
+                            <Grid ColumnDefinitions="Auto,*">
+                                <Border x:Name="DetectionIndicator"
+                                        Style="{StaticResource StatusIndicatorStyle}"
+                                        BackgroundColor="{StaticResource PrimaryColor}" />
+                                <Label Grid.Column="1"
+                                       x:Name="LastDetectionLabel"
+                                       Text="No Data"
+                                       Style="{StaticResource LabelValueStyle}"/>
+                            </Grid>
+                        </VerticalStackLayout>
+
+                        <!-- Notification Socket Section -->
+                        <VerticalStackLayout>
+                            <Label Text="NOTIFICATION SERVICE"
+                                   Style="{StaticResource LabelHeaderStyle}"/>
+                            <Grid ColumnDefinitions="Auto,*">
+                                <Border x:Name="NotificationIndicator"
+                                        Style="{StaticResource StatusIndicatorStyle}"
+                                        BackgroundColor="{StaticResource ErrorColor}" />
+                                <Label Grid.Column="1"
+                                       x:Name="NotificationSocketLabel"
+                                       Text="Not Running"
+                                       Style="{StaticResource LabelValueStyle}"/>
+                            </Grid>
+                        </VerticalStackLayout>
+                    </VerticalStackLayout>
+                </Border>
+
+                <!-- Last Updated Time -->
+                <Label Text="Last updated: Just now"
+                       TextColor="{StaticResource TextSecondaryColor}"
+                       HorizontalOptions="Center"
+                       FontSize="14"
+                       Margin="0,10,0,0"/>
+            </VerticalStackLayout>
+        </Grid>
     </ScrollView>
 </ContentPage>

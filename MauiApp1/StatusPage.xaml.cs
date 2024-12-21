@@ -26,22 +26,17 @@ namespace MauiApp1
         protected override void OnAppearing()
         {
             base.OnAppearing();
-            Console.WriteLine("StatusPage OnAppearing: Starting timer.");
             _refreshTimer.Start();
         }
 
         protected override void OnDisappearing()
         {
             base.OnDisappearing();
-            Console.WriteLine("StatusPage OnDisappearing: Stopping timer.");
             _refreshTimer.Stop();
         }
 
         private async void RefreshStatus(object? sender, System.Timers.ElapsedEventArgs e)
         {
-            Console.WriteLine("StatusPage RefreshStatus triggered.");
-
-            // Capture current state
             bool serverConnected = AppState.ServerConnected;
             string serverIp = AppState.ServerIp;
             string lastDetection = AppState.LastDetection;
@@ -58,16 +53,9 @@ namespace MauiApp1
 
             try
             {
-                // Perform network call on background thread
                 var response = await _httpClient.GetAsync($"http://{serverIp}:5000/status");
-                Console.WriteLine($"StatusPage received response: {response.StatusCode}");
-
                 if (response.IsSuccessStatusCode)
                 {
-                    string serverResponse = await response.Content.ReadAsStringAsync();
-                    Console.WriteLine($"StatusPage server response body: {serverResponse}");
-
-                    
                     MainThread.BeginInvokeOnMainThread(() =>
                     {
                         UpdateStatusUI(serverIp, true, lastDetection, notificationRunning);
@@ -81,9 +69,8 @@ namespace MauiApp1
                     });
                 }
             }
-            catch (Exception ex)
+            catch
             {
-                Console.WriteLine($"StatusPage RefreshStatus exception: {ex.Message}");
                 MainThread.BeginInvokeOnMainThread(() =>
                 {
                     UpdateStatusUI("Not Connected", false, "No Data", false);
@@ -95,6 +82,12 @@ namespace MauiApp1
         {
             ServerIpLabel.Text = serverIp;
             ServerConnectivityLabel.Text = connected ? "Connected" : "Disconnected";
+            ServerConnectivityLabel.TextColor = connected ? Colors.Green : Colors.Red;
+
+            ConnectivityStatusIndicator.BackgroundColor = connected ? Colors.Green : Colors.Red;
+            DetectionIndicator.BackgroundColor = lastDetection != "No Data" ? Colors.Orange : Colors.Gray;
+            NotificationIndicator.BackgroundColor = notificationRunning ? Colors.Green : Colors.Red;
+
             LastDetectionLabel.Text = lastDetection;
             NotificationSocketLabel.Text = notificationRunning ? "Running" : "Not Running";
         }

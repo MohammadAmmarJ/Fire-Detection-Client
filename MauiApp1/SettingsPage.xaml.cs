@@ -9,11 +9,9 @@ namespace MauiApp1
 
         private void OnNetworkOptionChanged(object sender, CheckedChangedEventArgs e)
         {
-            // Enable or disable WAN IP entry based on selected option
+            // Enable or disable WAN settings based on WAN option selection
+            WanSettingsSection.IsVisible = WanOption.IsChecked;
             WanIpEntry.IsEnabled = WanOption.IsChecked;
-
-            // Save user choice to AppState
-            AppState.UseLan = LanOption.IsChecked;
         }
 
         private async void OnConnectClicked(object sender, EventArgs e)
@@ -26,14 +24,14 @@ namespace MauiApp1
             {
                 AppState.UseLan = false;
 
-                // Validate WAN IP
+                // Validate that the WAN IP entry is not empty
                 if (string.IsNullOrEmpty(WanIpEntry.Text?.Trim()))
                 {
-                    await DisplayAlert("Error", "Please enter a valid WAN IP address.", "OK");
+                    await DisplayAlert("Error", "Please enter a WAN IP address.", "OK");
                     return;
                 }
 
-                // Check if the input is a valid IP address
+                // Validate the IP address format
                 if (!IsValidIp(WanIpEntry.Text.Trim()))
                 {
                     await DisplayAlert("Error", "Invalid IP address format.", "OK");
@@ -48,10 +46,10 @@ namespace MauiApp1
                 return;
             }
 
-            await DisplayAlert("Settings Saved", "Network settings have been saved.", "OK");
+            await DisplayAlert("Settings Saved", "Your network settings have been saved.", "OK");
         }
 
-        // Helper method to validate IP address format
+        // Helper method to validate an IP address
         private bool IsValidIp(string ip)
         {
             return System.Net.IPAddress.TryParse(ip, out _);

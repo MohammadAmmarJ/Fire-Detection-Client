@@ -2,59 +2,181 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiApp1.SettingsPage"
-             Title="SettingsPage"
-             BackgroundColor="#2A2A2A">
-    <VerticalStackLayout Padding="20">
-        <Label 
-            Text="Network Settings"
-            FontSize="24"
-            HorizontalOptions="Center"
-            VerticalOptions="Start"
-            TextColor="White" />
+             Title="Settings">
 
-        <!-- Options for LAN or WAN -->
-        <Label Text="Select Network Type:" 
-               FontSize="18"
-               Margin="0,20,0,5"
-               TextColor="White" />
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <!-- Existing Color Palette -->
+            <Color x:Key="PageBackgroundColor">#2A2A2A</Color>
+            <Color x:Key="SurfaceColor">#3A3A3A</Color>
+            <Color x:Key="PrimaryColor">#007AFF</Color>
+            <Color x:Key="AccentColor">#fcb607</Color>
+            <Color x:Key="TextPrimaryColor">#FFFFFF</Color>
+            <Color x:Key="TextSecondaryColor">#B0B0B0</Color>
+            <Color x:Key="DividerColor">#4A4A4A</Color>
 
-        <!-- Radio Buttons for LAN and WAN -->
-        <Frame BackgroundColor="#3A3A3A" CornerRadius="10" Padding="5" Margin="0,5,0,0" HasShadow="False" >
-            <RadioButton x:Name="LanOption" 
-                         Content="Local Network (LAN)" 
-                         GroupName="NetworkType" 
-                         IsChecked="True" 
-                         BackgroundColor="#3A3A3A"
-                         CheckedChanged="OnNetworkOptionChanged"
-                         
-                         TextColor="White" />
-        </Frame>
+            <!-- Added RadioButton Style -->
+            <Style x:Key="CustomRadioButtonStyle" TargetType="RadioButton">
+                <Setter Property="ControlTemplate">
+                    <Setter.Value>
+                        <ControlTemplate>
+                            <Grid ColumnDefinitions="Auto,*" ColumnSpacing="15">
+                                <Frame Grid.Column="0"
+                                       HeightRequest="24"
+                                       WidthRequest="24"
+                                       CornerRadius="12"
+                                       Padding="0"
+                                       BorderColor="{StaticResource AccentColor}"
+                                       BackgroundColor="Transparent"
+                                       HasShadow="False">
+                                    <Frame IsVisible="{TemplateBinding IsChecked}"
+                                           HeightRequest="16"
+                                           WidthRequest="16"
+                                           CornerRadius="8"
+                                           Margin="4"
+                                           BackgroundColor="{StaticResource AccentColor}"
+                                           HasShadow="False"/>
+                                </Frame>
+                                <ContentPresenter Grid.Column="1" />
+                            </Grid>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
 
-        <Frame BackgroundColor="#3A3A3A" CornerRadius="10" Padding="5" Margin="0,5,0,0" HasShadow="False" >
-            <RadioButton x:Name="WanOption" 
-                         Content="Wide Area Network (WAN)" 
-                         GroupName="NetworkType" 
-                         BackgroundColor="#3A3A3A"
-                         CheckedChanged="OnNetworkOptionChanged"
-                         TextColor="White" />
-        </Frame>
+            <!-- Existing Styles -->
+            <Style x:Key="PageHeaderStyle" TargetType="Label">
+                <Setter Property="FontSize" Value="32"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="TextColor" Value="{StaticResource TextPrimaryColor}"/>
+                <Setter Property="HorizontalOptions" Value="Center"/>
+            </Style>
 
-        <!-- WAN IP Input -->
-        <Entry x:Name="WanIpEntry" 
-               Placeholder="Enter WAN IP Address"
-               IsEnabled="False" 
-               Keyboard="Chat" 
-               Margin="0,10,0,0"
-               BackgroundColor="#3A3A3A"
-               TextColor="White" />
+            <Style x:Key="SectionHeaderStyle" TargetType="Label">
+                <Setter Property="FontSize" Value="18"/>
+                <Setter Property="TextColor" Value="{StaticResource TextSecondaryColor}"/>
+                <Setter Property="Margin" Value="0,20,0,10"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+            </Style>
 
-        <!-- Connect Button -->
-        <Button Text="Save" 
-                Margin="0,20,0,0"
-                Clicked="OnConnectClicked"
-                BackgroundColor="#fcb607"
-                WidthRequest="150"
-                TextColor="Black"
-                CornerRadius="20" />
-    </VerticalStackLayout>
+            <Style x:Key="NetworkOptionStyle" TargetType="Border">
+                <Setter Property="StrokeShape" Value="RoundRectangle 12"/>
+                <Setter Property="BackgroundColor" Value="{StaticResource SurfaceColor}"/>
+                <Setter Property="Stroke" Value="{StaticResource DividerColor}"/>
+                <Setter Property="StrokeThickness" Value="1"/>
+                <Setter Property="Padding" Value="15"/>
+                <Setter Property="Margin" Value="0,5"/>
+            </Style>
+
+            <Style x:Key="ActionButtonStyle" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="{StaticResource AccentColor}"/>
+                <Setter Property="TextColor" Value="Black"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="FontSize" Value="16"/>
+                <Setter Property="CornerRadius" Value="25"/>
+                <Setter Property="HeightRequest" Value="50"/>
+                <Setter Property="Padding" Value="20,0"/>
+                <Setter Property="MinimumWidthRequest" Value="200"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ScrollView BackgroundColor="{StaticResource PageBackgroundColor}">
+        <Grid Padding="20" RowSpacing="20">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <!-- Header Section -->
+            <VerticalStackLayout Grid.Row="0" Spacing="5">
+                <Label Text="Network Settings"
+                       Style="{StaticResource PageHeaderStyle}"/>
+                <Label Text="Configure your connection preferences"
+                       TextColor="{StaticResource TextSecondaryColor}"
+                       HorizontalOptions="Center"/>
+            </VerticalStackLayout>
+
+            <!-- Settings Card -->
+            <Border Grid.Row="1"
+                    StrokeShape="RoundRectangle 16"
+                    BackgroundColor="{StaticResource SurfaceColor}"
+                    Padding="20">
+                <VerticalStackLayout Spacing="15">
+                    <!-- Network Type Selection -->
+                    <Label Text="NETWORK TYPE"
+                           Style="{StaticResource SectionHeaderStyle}"/>
+
+                    <!-- LAN Option -->
+                    <Border Style="{StaticResource NetworkOptionStyle}">
+                        <RadioButton x:Name="LanOption"
+                                   GroupName="NetworkType"
+                                   IsChecked="True"
+                                   Style="{StaticResource CustomRadioButtonStyle}"
+                                   CheckedChanged="OnNetworkOptionChanged">
+                            <RadioButton.Content>
+                                <VerticalStackLayout Spacing="5">
+                                    <Label Text="Local Network (LAN)"
+                                           TextColor="{StaticResource TextPrimaryColor}"
+                                           FontSize="16"
+                                           FontAttributes="Bold"/>
+                                    <Label Text="Connect to devices on your local network"
+                                           TextColor="{StaticResource TextSecondaryColor}"
+                                           FontSize="14"/>
+                                </VerticalStackLayout>
+                            </RadioButton.Content>
+                        </RadioButton>
+                    </Border>
+
+                    <!-- WAN Option -->
+                    <Border Style="{StaticResource NetworkOptionStyle}">
+                        <RadioButton x:Name="WanOption"
+                                   GroupName="NetworkType"
+                                   Style="{StaticResource CustomRadioButtonStyle}"
+                                   CheckedChanged="OnNetworkOptionChanged">
+                            <RadioButton.Content>
+                                <VerticalStackLayout Spacing="5">
+                                    <Label Text="Wide Area Network (WAN)"
+                                           TextColor="{StaticResource TextPrimaryColor}"
+                                           FontSize="16"
+                                           FontAttributes="Bold"/>
+                                    <Label Text="Connect to devices over the internet"
+                                           TextColor="{StaticResource TextSecondaryColor}"
+                                           FontSize="14"/>
+                                </VerticalStackLayout>
+                            </RadioButton.Content>
+                        </RadioButton>
+                    </Border>
+
+                    <!-- WAN Settings Section -->
+                    <VerticalStackLayout x:Name="WanSettingsSection" 
+                                       IsVisible="False">
+                        <Label Text="WAN CONFIGURATION"
+                               Style="{StaticResource SectionHeaderStyle}"/>
+                        <Border Style="{StaticResource NetworkOptionStyle}">
+                            <VerticalStackLayout Spacing="5">
+                                <Label Text="IP Address"
+                                       TextColor="{StaticResource TextSecondaryColor}"
+                                       FontSize="14"/>
+                                <Entry x:Name="WanIpEntry"
+                                       Placeholder="Enter WAN IP Address"
+                                       PlaceholderColor="{StaticResource TextSecondaryColor}"
+                                       TextColor="{StaticResource TextPrimaryColor}"
+                                       BackgroundColor="Transparent"
+                                       Keyboard="Text"/>
+                            </VerticalStackLayout>
+                        </Border>
+                    </VerticalStackLayout>
+                </VerticalStackLayout>
+            </Border>
+
+            <!-- Action Button -->
+            <Button Grid.Row="2"
+                    Text="Save Changes"
+                    Style="{StaticResource ActionButtonStyle}"
+                    Clicked="OnConnectClicked"
+                    HorizontalOptions="Center"/>
+        </Grid>
+    </ScrollView>
 </ContentPage>

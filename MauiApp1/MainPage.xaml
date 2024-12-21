@@ -5,47 +5,118 @@
     x:Class="MauiApp1.MainPage"
     Title="Detection Stream">
 
-    <Grid RowDefinitions="Auto, *, Auto" Padding="20" BackgroundColor="{StaticResource PageBackgroundColor}">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <!-- Color Palette -->
+            <Color x:Key="PageBackgroundColor">#1E1E1E</Color>
+            <Color x:Key="SurfaceColor">#2D2D2D</Color>
+            <Color x:Key="PrimaryColor">#007AFF</Color>
+            <Color x:Key="WarningColor">#FF9500</Color>
+            <Color x:Key="SuccessColor">#34C759</Color>
+            <Color x:Key="TextPrimaryColor">#FFFFFF</Color>
+            <Color x:Key="TextSecondaryColor">#B0B0B0</Color>
 
-        <!-- Header Label -->
-        <Label Text="Fire Detection Stream"
-               Grid.Row="0"
-               Style="{StaticResource HeaderLabelStyle}"
-               HorizontalOptions="Center" />
+            <!-- Common Styles -->
+            <Style x:Key="PageHeaderStyle" TargetType="Label">
+                <Setter Property="FontSize" Value="32"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="TextColor" Value="{StaticResource TextPrimaryColor}"/>
+                <Setter Property="HorizontalOptions" Value="Center"/>
+            </Style>
 
-        <!-- Video Stream Card -->
-        <Frame Grid.Row="1"
-               BackgroundColor="{StaticResource CardBackgroundColor}"
-               VerticalOptions="FillAndExpand"
-               HorizontalOptions="FillAndExpand"
-               Padding="0">
-            <Grid x:Name="VideoContainer" />
-        </Frame>
+            <Style x:Key="StatusLabelStyle" TargetType="Label">
+                <Setter Property="FontSize" Value="16"/>
+                <Setter Property="TextColor" Value="{StaticResource TextSecondaryColor}"/>
+                <Setter Property="HorizontalTextAlignment" Value="Center"/>
+            </Style>
 
-        <!-- Control Buttons -->
-        <VerticalStackLayout Grid.Row="2" Spacing="10" Padding="10">
-            <Label x:Name="NotificationLabel"
-                   Text="No Notifications"
-                   Style="{StaticResource NotificationLabelStyle}" />
+            <Style x:Key="ActionButtonStyle" TargetType="Button">
+                <Setter Property="FontSize" Value="16"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="CornerRadius" Value="25"/>
+                <Setter Property="Padding" Value="20,12"/>
+                <Setter Property="MinimumWidthRequest" Value="160"/>
+                <Setter Property="TextColor" Value="{StaticResource TextPrimaryColor}"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
 
-            <HorizontalStackLayout HorizontalOptions="Center" Spacing="20">
-                <Button Text="Start Monitoring"
+    <Grid BackgroundColor="{StaticResource PageBackgroundColor}" 
+          RowDefinitions="Auto,*,Auto" 
+          RowSpacing="20" 
+          Padding="20">
+
+        <!-- Header Section -->
+        <VerticalStackLayout Grid.Row="0" Spacing="5">
+            <Label Text="Fire Detection Stream"
+                   Style="{StaticResource PageHeaderStyle}"/>
+            <Label Text="Real-time monitoring system"
+                   TextColor="{StaticResource TextSecondaryColor}"
+                   HorizontalOptions="Center"/>
+        </VerticalStackLayout>
+
+        <!-- Video Stream Section -->
+        <Border Grid.Row="1"
+                StrokeShape="RoundRectangle 16"
+                BackgroundColor="{StaticResource SurfaceColor}"
+                StrokeThickness="0">
+            <Grid>
+                <Grid x:Name="VideoContainer"/>
+
+                <!-- Placeholder when no video -->
+                <VerticalStackLayout x:Name="NoVideoPlaceholder" 
+                                     IsVisible="True"
+                                   HorizontalOptions="Center" 
+                                   VerticalOptions="Center"
+                                   Spacing="10">
+                    <Image Source="video_placeholder.png"
+                           HeightRequest="64"
+                           Opacity="0.5"/>
+                    <Label Text="No Active Video Feed"
+                           TextColor="{StaticResource TextSecondaryColor}"
+                           FontSize="18"/>
+                </VerticalStackLayout>
+            </Grid>
+        </Border>
+
+        <!-- Controls Section -->
+        <VerticalStackLayout Grid.Row="2" Spacing="15">
+            <!-- Status Card -->
+            <Border StrokeShape="RoundRectangle 12"
+                    BackgroundColor="{StaticResource SurfaceColor}"
+                    Padding="15">
+                <Grid ColumnDefinitions="Auto,*" ColumnSpacing="15">
+                    <Border
+                        x:Name="StatusIndicator"
+                        WidthRequest="12" 
+                           HeightRequest="12"
+                           StrokeShape="RoundRectangle 6"
+                           BackgroundColor="{StaticResource WarningColor}"
+                           VerticalOptions="Center"/>
+                    <Label Grid.Column="1"
+                           x:Name="NotificationLabel"
+                           Text="System Ready"
+                           Style="{StaticResource StatusLabelStyle}"/>
+                </Grid>
+            </Border>
+
+            <!-- Control Buttons -->
+            <Grid ColumnDefinitions="*,*" ColumnSpacing="15">
+                <Button Grid.Column="0"
+                        Text="Start Monitoring"
                         x:Name="StartButton"
                         Clicked="StartButton_Clicked"
-                        Style="{StaticResource ButtonStyle}"
-                        WidthRequest="120"
-                        HeightRequest="50"/>
-                <Button Text="Stop Monitoring"
+                        Style="{StaticResource ActionButtonStyle}"
+                        BackgroundColor="{StaticResource SuccessColor}"/>
+
+                <Button Grid.Column="1"
+                        Text="Stop Monitoring"
                         x:Name="StopButton"
                         Clicked="StopButton_Clicked"
-                        IsEnabled="False"
-                        Style="{StaticResource ButtonStyle}"
-                        WidthRequest="120"
-                        HeightRequest="50"/>
-            </HorizontalStackLayout>
-
-            <!-- Notification Service Buttons -->
-
+                        Style="{StaticResource ActionButtonStyle}"
+                        BackgroundColor="{StaticResource WarningColor}"
+                        IsEnabled="False"/>
+            </Grid>
         </VerticalStackLayout>
     </Grid>
 </ContentPage>

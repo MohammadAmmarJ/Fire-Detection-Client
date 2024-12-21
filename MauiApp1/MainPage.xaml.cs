@@ -74,12 +74,18 @@ namespace MauiApp1
             NotificationLabel.Text = "Attempting to start monitoring...";
             NotificationLabel.TextColor = Colors.Gray;
 
+            // Change status indicator to a "pending" color
+            StatusIndicator.BackgroundColor = Colors.Gray;
+
             var serverIp = await DiscoverServer();
             if (string.IsNullOrEmpty(serverIp))
             {
                 await DisplayAlert("Error", "Server not found on the local network.", "OK");
                 NotificationLabel.Text = "Server not found.";
                 NotificationLabel.TextColor = Colors.Red;
+
+                // Set status indicator to an error color
+                StatusIndicator.BackgroundColor = Colors.Red;
 
                 StartButton.IsEnabled = true;
                 StopButton.IsEnabled = false;
@@ -101,8 +107,15 @@ namespace MauiApp1
                     VideoContainer.Children.Add(_videoStreamWebView);
                 }
 
+                // Hide the placeholder
+                NoVideoPlaceholder.IsVisible = false;
+
                 NotificationLabel.Text = "Monitoring started!";
                 NotificationLabel.TextColor = Colors.Green;
+
+                // Change status indicator to success color
+                StatusIndicator.BackgroundColor = Colors.Green;
+
                 StartNotificationService("Background service running");
             });
 
@@ -120,12 +133,18 @@ namespace MauiApp1
             NotificationLabel.Text = "No Notifications";
             NotificationLabel.TextColor = Colors.Gray;
 
+            // Change status indicator to success color
+            StatusIndicator.BackgroundColor = Colors.Yellow;
+
             // Clear the video stream
             VideoContainer.Children.Clear();
 
             MainThread.BeginInvokeOnMainThread(() =>
             {
                 _videoStreamWebView.Source = null;
+
+                // Show the placeholder
+                NoVideoPlaceholder.IsVisible = true;
             });
 
             // Stop polling
@@ -242,6 +261,29 @@ namespace MauiApp1
                         _previousStatus = currentStatus;
                     }
                 }
+                catch (HttpRequestException)
+                {
+                    // Handle server disconnection
+                    MainThread.BeginInvokeOnMainThread(() =>
+                    {
+                        // Simulate pressing the stop button
+                        StopButton_Clicked(null, EventArgs.Empty);
+                        NotificationLabel.Text = "Server disconnected";
+                        NotificationLabel.TextColor = Colors.Red; // Set the notification text color to red
+
+                        // Change the status indicator color to red
+                        StatusIndicator.BackgroundColor = Colors.Red;
+
+                        // Optionally stop polling to avoid continuous retries
+                        _pollingCts?.Cancel();
+                    });
+
+                    AppState.LastDetection = "Server disconnected";
+
+                    // Start notification service with "Server disconnected" message
+                    StartNotificationService("Server disconnected");
+                    return;
+                }
                 catch (Exception ex)
                 {
                     Console.WriteLine($"Error polling detection status: {ex.Message}");
@@ -250,6 +292,7 @@ namespace MauiApp1
                 await Task.Delay(1000, token);
             }
         }
+
         //Reset the notificcation label after a delay
         private void ResetNotificationAfterDelay()
         {
