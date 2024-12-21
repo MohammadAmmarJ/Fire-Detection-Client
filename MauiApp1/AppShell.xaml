@@ -12,6 +12,7 @@
     <TabBar>
         <ShellContent Title="Monitor" Icon="monitor.png" ContentTemplate="{DataTemplate local:MainPage}" />
         <ShellContent Title="Status" Icon="info.png" ContentTemplate="{DataTemplate local:StatusPage}" />
+        <ShellContent Title="Settings" Icon="setting.png" ContentTemplate="{DataTemplate local:SettingsPage}" />
     </TabBar>
 
 </Shell>

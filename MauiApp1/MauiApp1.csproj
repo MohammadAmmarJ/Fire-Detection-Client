@@ -65,6 +65,7 @@
     <None Remove="Resources\Images\fire.png" />
     <None Remove="Resources\Images\info.png" />
     <None Remove="Resources\Images\monitor.png" />
+    <None Remove="Resources\Images\setting.png" />
     <None Remove="Resources\Splash\ic_launcher.png" />
   </ItemGroup>
 
@@ -88,6 +89,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <MauiXaml Update="SettingsPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </MauiXaml>
     <MauiXaml Update="StatusPage.xaml">
       <Generator>MSBuild:Compile</Generator>
     </MauiXaml>

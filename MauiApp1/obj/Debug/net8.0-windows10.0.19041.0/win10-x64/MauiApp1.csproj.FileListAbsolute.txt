@@ -1328,3 +1328,15 @@ C:\Users\moham\Desktop\apps\good\bad\test\MauiApp1\MauiApp1\obj\Debug\net8.0-win
 C:\Users\moham\Desktop\apps\good\bad\test\MauiApp1\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\qualifiers.txt.intermediate
 C:\Users\moham\Desktop\apps\good\bad\test\MauiApp1\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\MultipleQualifiersPerDimensionFound.txt
 C:\Users\moham\Desktop\apps\good\bad\test\MauiApp1\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\ProjectArchitectures.txt
+C:\Users\moham\Desktop\Github\Fire-Detection-Client\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\MauiApp1.csproj.AssemblyReference.cache
+C:\Users\moham\Desktop\Github\Fire-Detection-Client\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\mauiimage.inputs
+C:\Users\moham\Desktop\Github\Fire-Detection-Client\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\mauifont.inputs
+C:\Users\moham\Desktop\Github\Fire-Detection-Client\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\mauisplash.inputs
+C:\Users\moham\Desktop\Github\Fire-Detection-Client\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\mauimanifest.stamp
+C:\Users\moham\Desktop\Github\Fire-Detection-Client\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\Platforms\Windows\App.g.i.cs
+C:\Users\moham\Desktop\Github\Fire-Detection-Client\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\Platforms\Windows\App.g.cs
+C:\Users\moham\Desktop\Github\Fire-Detection-Client\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\XamlTypeInfo.g.cs
+C:\Users\moham\Desktop\Github\Fire-Detection-Client\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\Platforms\Windows\App.xaml
+C:\Users\moham\Desktop\Github\Fire-Detection-Client\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\Platforms\Windows\App.xbf
+C:\Users\moham\Desktop\Github\Fire-Detection-Client\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\XamlSaveStateFile.xml
+C:\Users\moham\Desktop\Github\Fire-Detection-Client\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\MauiApp1.GeneratedMSBuildEditorConfig.editorconfig

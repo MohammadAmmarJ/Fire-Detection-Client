@@ -6,5 +6,8 @@
         public static string ServerIp { get; set; } = "Not Connected";
         public static string LastDetection { get; set; } = "No Data";
         public static bool NotificationRunning { get; set; } = false;
+
+        public static bool UseLan { get; set; } = true; // Default to LAN
+        public static string? ManualWanIp { get; set; } = null;
     }
 }

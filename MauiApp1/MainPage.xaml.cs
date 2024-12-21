@@ -4,6 +4,8 @@ using System;
 using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
+using System.Text;
+
 
 #if ANDROID
 using Android.Content;
@@ -149,37 +151,52 @@ namespace MauiApp1
         //return the ip address of the server if found,otherwise ,null
         private async Task<string?> DiscoverServer()
         {
-            try
+            if (AppState.UseLan)
             {
-                using (var udpClient = new System.Net.Sockets.UdpClient())
+                // Perform LAN discovery
+                try
                 {
-                    udpClient.EnableBroadcast = true;
-                    var discoveryEndpoint = new System.Net.IPEndPoint(System.Net.IPAddress.Broadcast, DiscoveryPort);
-                    byte[] discoveryBytes = System.Text.Encoding.UTF8.GetBytes(DiscoveryMessage);
-                    await udpClient.SendAsync(discoveryBytes, discoveryBytes.Length, discoveryEndpoint);
-
-                    var receiveTask = udpClient.ReceiveAsync();
-                    var completedTask = await Task.WhenAny(receiveTask, Task.Delay(5000));
-
-                    if (completedTask == receiveTask)
+                    using (var udpClient = new System.Net.Sockets.UdpClient())
                     {
-                        var result = await receiveTask;
-                        string response = System.Text.Encoding.UTF8.GetString(result.Buffer);
+                        udpClient.EnableBroadcast = true;
+                        var discoveryEndpoint = new System.Net.IPEndPoint(System.Net.IPAddress.Broadcast, DiscoveryPort);
+                        byte[] discoveryBytes = Encoding.UTF8.GetBytes(DiscoveryMessage);
+                        await udpClient.SendAsync(discoveryBytes, discoveryBytes.Length, discoveryEndpoint);
 
-                        if (response.StartsWith(ResponseMessage))
+                        var receiveTask = udpClient.ReceiveAsync();
+                        var completedTask = await Task.WhenAny(receiveTask, Task.Delay(5000));
+
+                        if (completedTask == receiveTask)
                         {
-                            string serverIp = response.Substring(ResponseMessage.Length);
-                            return serverIp;
+                            var result = await receiveTask;
+                            string response = Encoding.UTF8.GetString(result.Buffer);
+
+                            if (response.StartsWith(ResponseMessage))
+                            {
+                                string serverIp = response.Substring(ResponseMessage.Length);
+                                return serverIp;
+                            }
                         }
                     }
                 }
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"Error during server discovery: {ex.Message}");
-            }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"Error during server discovery: {ex.Message}");
+                }
 
-            return null;
+                return null;
+            }
+            else
+            {
+                // Use the manually entered WAN IP
+                if (!string.IsNullOrEmpty(AppState.ManualWanIp))
+                {
+                    return AppState.ManualWanIp;
+                }
+
+                await DisplayAlert("Error", "WAN IP not provided in settings.", "OK");
+                return null;
+            }
         }
         //Polls the detection status from the server and update the ui accordingly
         private async Task PollDetectionStatusAsync(CancellationToken token)
