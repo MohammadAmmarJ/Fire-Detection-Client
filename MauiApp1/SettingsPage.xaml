@@ -1,21 +1,23 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:zxing="clr-namespace:ZXing.Net.Maui.Controls;assembly=ZXing.Net.MAUI.Controls"
              x:Class="MauiApp1.SettingsPage"
              Title="Settings">
 
     <ContentPage.Resources>
         <ResourceDictionary>
-            <!-- Existing Color Palette -->
-            <Color x:Key="PageBackgroundColor">#2A2A2A</Color>
-            <Color x:Key="SurfaceColor">#3A3A3A</Color>
+            <!-- Enhanced Color Palette -->
+            <Color x:Key="PageBackgroundColor">#1E1E1E</Color>
+            <Color x:Key="SurfaceColor">#2D2D2D</Color>
             <Color x:Key="PrimaryColor">#007AFF</Color>
-            <Color x:Key="AccentColor">#fcb607</Color>
+            <Color x:Key="AccentColor">#FCB607</Color>
             <Color x:Key="TextPrimaryColor">#FFFFFF</Color>
             <Color x:Key="TextSecondaryColor">#B0B0B0</Color>
-            <Color x:Key="DividerColor">#4A4A4A</Color>
+            <Color x:Key="DividerColor">#3D3D3D</Color>
+            <Color x:Key="ShadowColor">#000000</Color>
 
-            <!-- Added RadioButton Style -->
+            <!-- Enhanced RadioButton Style -->
             <Style x:Key="CustomRadioButtonStyle" TargetType="RadioButton">
                 <Setter Property="ControlTemplate">
                     <Setter.Value>
@@ -44,12 +46,13 @@
                 </Setter>
             </Style>
 
-            <!-- Existing Styles -->
+            <!-- Enhanced Styles -->
             <Style x:Key="PageHeaderStyle" TargetType="Label">
                 <Setter Property="FontSize" Value="32"/>
                 <Setter Property="FontAttributes" Value="Bold"/>
                 <Setter Property="TextColor" Value="{StaticResource TextPrimaryColor}"/>
                 <Setter Property="HorizontalOptions" Value="Center"/>
+                <Setter Property="Margin" Value="0,20,0,10"/>
             </Style>
 
             <Style x:Key="SectionHeaderStyle" TargetType="Label">
@@ -66,6 +69,14 @@
                 <Setter Property="StrokeThickness" Value="1"/>
                 <Setter Property="Padding" Value="15"/>
                 <Setter Property="Margin" Value="0,5"/>
+                <Setter Property="Shadow">
+                    <Setter.Value>
+                        <Shadow Brush="{StaticResource ShadowColor}"
+                               Offset="0,2"
+                               Radius="4"
+                               Opacity="0.2"/>
+                    </Setter.Value>
+                </Setter>
             </Style>
 
             <Style x:Key="ActionButtonStyle" TargetType="Button">
@@ -77,106 +88,161 @@
                 <Setter Property="HeightRequest" Value="50"/>
                 <Setter Property="Padding" Value="20,0"/>
                 <Setter Property="MinimumWidthRequest" Value="200"/>
+                <Setter Property="Shadow">
+                    <Setter.Value>
+                        <Shadow Brush="{StaticResource ShadowColor}"
+                               Offset="0,4"
+                               Radius="8"
+                               Opacity="0.3"/>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+
+            <!-- New Scan Button Style -->
+            <Style x:Key="ScanButtonStyle" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="{StaticResource PrimaryColor}"/>
+                <Setter Property="TextColor" Value="White"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="FontSize" Value="16"/>
+                <Setter Property="CornerRadius" Value="25"/>
+                <Setter Property="HeightRequest" Value="50"/>
+                <Setter Property="Margin" Value="0,20,0,0"/>
+                <Setter Property="Shadow">
+                    <Setter.Value>
+                        <Shadow Brush="{StaticResource ShadowColor}"
+                               Offset="0,4"
+                               Radius="8"
+                               Opacity="0.3"/>
+                    </Setter.Value>
+                </Setter>
             </Style>
         </ResourceDictionary>
     </ContentPage.Resources>
 
-    <ScrollView BackgroundColor="{StaticResource PageBackgroundColor}">
-        <Grid Padding="20" RowSpacing="20">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="Auto"/>
-            </Grid.RowDefinitions>
+    <Grid>
+        <!-- Main Content -->
+        <ScrollView x:Name="MainContent" BackgroundColor="{StaticResource PageBackgroundColor}">
+            <Grid Padding="20" RowSpacing="20">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
 
-            <!-- Header Section -->
-            <VerticalStackLayout Grid.Row="0" Spacing="5">
-                <Label Text="Network Settings"
-                       Style="{StaticResource PageHeaderStyle}"/>
-                <Label Text="Configure your connection preferences"
-                       TextColor="{StaticResource TextSecondaryColor}"
-                       HorizontalOptions="Center"/>
-            </VerticalStackLayout>
+                <!-- Header Section -->
+                <VerticalStackLayout Grid.Row="0" Spacing="5">
+                    <Label Text="Network Settings"
+                           Style="{StaticResource PageHeaderStyle}"/>
+                    <Label Text="Configure your connection preferences"
+                           TextColor="{StaticResource TextSecondaryColor}"
+                           HorizontalOptions="Center"/>
+                </VerticalStackLayout>
 
-            <!-- Settings Card -->
-            <Border Grid.Row="1"
-                    StrokeShape="RoundRectangle 16"
-                    BackgroundColor="{StaticResource SurfaceColor}"
-                    Padding="20">
-                <VerticalStackLayout Spacing="15">
-                    <!-- Network Type Selection -->
-                    <Label Text="NETWORK TYPE"
-                           Style="{StaticResource SectionHeaderStyle}"/>
-
-                    <!-- LAN Option -->
-                    <Border Style="{StaticResource NetworkOptionStyle}">
-                        <RadioButton x:Name="LanOption"
-                                   GroupName="NetworkType"
-                                   IsChecked="True"
-                                   Style="{StaticResource CustomRadioButtonStyle}"
-                                   CheckedChanged="OnNetworkOptionChanged">
-                            <RadioButton.Content>
-                                <VerticalStackLayout Spacing="5">
-                                    <Label Text="Local Network (LAN)"
-                                           TextColor="{StaticResource TextPrimaryColor}"
-                                           FontSize="16"
-                                           FontAttributes="Bold"/>
-                                    <Label Text="Connect to devices on your local network"
-                                           TextColor="{StaticResource TextSecondaryColor}"
-                                           FontSize="14"/>
-                                </VerticalStackLayout>
-                            </RadioButton.Content>
-                        </RadioButton>
-                    </Border>
-
-                    <!-- WAN Option -->
-                    <Border Style="{StaticResource NetworkOptionStyle}">
-                        <RadioButton x:Name="WanOption"
-                                   GroupName="NetworkType"
-                                   Style="{StaticResource CustomRadioButtonStyle}"
-                                   CheckedChanged="OnNetworkOptionChanged">
-                            <RadioButton.Content>
-                                <VerticalStackLayout Spacing="5">
-                                    <Label Text="Wide Area Network (WAN)"
-                                           TextColor="{StaticResource TextPrimaryColor}"
-                                           FontSize="16"
-                                           FontAttributes="Bold"/>
-                                    <Label Text="Connect to devices over the internet"
-                                           TextColor="{StaticResource TextSecondaryColor}"
-                                           FontSize="14"/>
-                                </VerticalStackLayout>
-                            </RadioButton.Content>
-                        </RadioButton>
-                    </Border>
-
-                    <!-- WAN Settings Section -->
-                    <VerticalStackLayout x:Name="WanSettingsSection" 
-                                       IsVisible="False">
-                        <Label Text="WAN CONFIGURATION"
+                <!-- Settings Card -->
+                <Border Grid.Row="1"
+                        StrokeShape="RoundRectangle 16"
+                        BackgroundColor="{StaticResource SurfaceColor}"
+                        Padding="20">
+                    <VerticalStackLayout Spacing="15">
+                        <!-- Network Type Selection -->
+                        <Label Text="NETWORK TYPE"
                                Style="{StaticResource SectionHeaderStyle}"/>
+
+                        <!-- LAN Option -->
                         <Border Style="{StaticResource NetworkOptionStyle}">
-                            <VerticalStackLayout Spacing="5">
-                                <Label Text="IP Address"
-                                       TextColor="{StaticResource TextSecondaryColor}"
-                                       FontSize="14"/>
-                                <Entry x:Name="WanIpEntry"
-                                       Placeholder="Enter WAN IP Address"
-                                       PlaceholderColor="{StaticResource TextSecondaryColor}"
-                                       TextColor="{StaticResource TextPrimaryColor}"
-                                       BackgroundColor="Transparent"
-                                       Keyboard="Text"/>
-                            </VerticalStackLayout>
+                            <RadioButton x:Name="LanOption"
+                                       GroupName="NetworkType"
+                                       IsChecked="True"
+                                       Style="{StaticResource CustomRadioButtonStyle}"
+                                       CheckedChanged="OnNetworkOptionChanged">
+                                <RadioButton.Content>
+                                    <VerticalStackLayout Spacing="5">
+                                        <Label Text="Local Network (LAN)"
+                                               TextColor="{StaticResource TextPrimaryColor}"
+                                               FontSize="16"
+                                               FontAttributes="Bold"/>
+                                        <Label Text="Connect to devices on your local network"
+                                               TextColor="{StaticResource TextSecondaryColor}"
+                                               FontSize="14"/>
+                                    </VerticalStackLayout>
+                                </RadioButton.Content>
+                            </RadioButton>
+                        </Border>
+
+                        <!-- WAN Option -->
+                        <Border Style="{StaticResource NetworkOptionStyle}">
+                            <RadioButton x:Name="WanOption"
+                                       GroupName="NetworkType"
+                                       Style="{StaticResource CustomRadioButtonStyle}"
+                                       CheckedChanged="OnNetworkOptionChanged">
+                                <RadioButton.Content>
+                                    <VerticalStackLayout Spacing="5">
+                                        <Label Text="Wide Area Network (WAN)"
+                                               TextColor="{StaticResource TextPrimaryColor}"
+                                               FontSize="16"
+                                               FontAttributes="Bold"/>
+                                        <Label Text="Connect to devices over the internet"
+                                               TextColor="{StaticResource TextSecondaryColor}"
+                                               FontSize="14"/>
+                                    </VerticalStackLayout>
+                                </RadioButton.Content>
+                            </RadioButton>
                         </Border>
                     </VerticalStackLayout>
-                </VerticalStackLayout>
-            </Border>
+                </Border>
 
-            <!-- Action Button -->
-            <Button Grid.Row="2"
-                    Text="Save Changes"
-                    Style="{StaticResource ActionButtonStyle}"
-                    Clicked="OnConnectClicked"
-                    HorizontalOptions="Center"/>
+                <!-- Scan QR Code Button -->
+                <Button Grid.Row="2"
+                        Text="Scan QR Code"
+                        Style="{StaticResource ScanButtonStyle}"
+                        Clicked="OnScanButtonClicked"/>
+
+               
+            </Grid>
+        </ScrollView>
+
+        <!-- Camera View (Initially Hidden) -->
+        <Grid x:Name="CameraView" 
+              BackgroundColor="Black" 
+              IsVisible="False">
+            <zxing:CameraBarcodeReaderView
+                x:Name="barcodeReader"
+                IsVisible="True"
+                BarcodesDetected="barcodeReader_BarcodesDetected">
+                
+            </zxing:CameraBarcodeReaderView>
+
+            <!-- Camera Overlay -->
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <!-- Header -->
+                <VerticalStackLayout Grid.Row="0" 
+                                   Padding="20"
+                                   BackgroundColor="#80000000">
+                    <Label Text="Scan QR Code"
+                           TextColor="White"
+                           FontSize="24"
+                           FontAttributes="Bold"
+                           HorizontalOptions="Center"/>
+                    <Label Text="Position the QR code within the frame"
+                           TextColor="#CCCCCC"
+                           FontSize="14"
+                           HorizontalOptions="Center"/>
+                </VerticalStackLayout>
+
+                <!-- Close Camera Button -->
+                <Button Grid.Row="2"
+                        Text="Cancel"
+                        Style="{StaticResource ActionButtonStyle}"
+                        Margin="20"
+                        Clicked="OnCloseCameraClicked"/>
+            </Grid>
         </Grid>
-    </ScrollView>
+    </Grid>
 </ContentPage>

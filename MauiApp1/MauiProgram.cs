@@ -1,5 +1,6 @@
 ﻿using CommunityToolkit.Maui;
 using Microsoft.Extensions.Logging;
+using ZXing.Net.Maui.Controls;
 
 namespace MauiApp1
 {
@@ -15,7 +16,8 @@ namespace MauiApp1
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
-                });
+                })
+                .UseBarcodeReader();
 
 
 #if DEBUG

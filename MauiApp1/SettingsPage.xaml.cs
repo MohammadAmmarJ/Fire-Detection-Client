@@ -1,3 +1,6 @@
+using System.Net;
+using ZXing.Net.Maui;
+
 namespace MauiApp1
 {
     public partial class SettingsPage : ContentPage
@@ -5,54 +8,70 @@ namespace MauiApp1
         public SettingsPage()
         {
             InitializeComponent();
+            barcodeReader.Options = new BarcodeReaderOptions
+            {
+                Formats = ZXing.Net.Maui.BarcodeFormat.QrCode,
+                AutoRotate = true,
+                Multiple = true,
+            };
         }
 
         private void OnNetworkOptionChanged(object sender, CheckedChangedEventArgs e)
         {
-            // Enable or disable WAN settings based on WAN option selection
-            WanSettingsSection.IsVisible = WanOption.IsChecked;
-            WanIpEntry.IsEnabled = WanOption.IsChecked;
-        }
-
-        private async void OnConnectClicked(object sender, EventArgs e)
-        {
             if (LanOption.IsChecked)
             {
                 AppState.UseLan = true;
+                DisplayAlert("Settings Saved", "LAN network settings have been saved.", "OK");
             }
-            else if (WanOption.IsChecked)
+        }
+
+        private void OnScanButtonClicked(object sender, EventArgs e)
+        {
+            MainContent.IsVisible = false;
+            CameraView.IsVisible = true;
+            barcodeReader.IsEnabled = true;
+        }
+
+        private void OnCloseCameraClicked(object sender, EventArgs e)
+        {
+            MainContent.IsVisible = true;
+            CameraView.IsVisible = false;
+            barcodeReader.IsEnabled = false;
+        }
+
+        private void barcodeReader_BarcodesDetected(object sender, BarcodeDetectionEventArgs e)
+        {
+            var barcode = e.Results.FirstOrDefault()?.Value;
+            if (!string.IsNullOrEmpty(barcode) && IsValidIp(barcode))
             {
+                // Save the scanned IP to the AppState
+                AppState.ManualWanIp = barcode;
                 AppState.UseLan = false;
 
-                // Validate that the WAN IP entry is not empty
-                if (string.IsNullOrEmpty(WanIpEntry.Text?.Trim()))
+                Dispatcher.Dispatch(() =>
                 {
-                    await DisplayAlert("Error", "Please enter a WAN IP address.", "OK");
-                    return;
-                }
+                    barcodeReader.IsDetecting = false;
+                    DisplayAlert("Settings Saved", $"Scanned IP: {barcode}", "OK");
 
-                // Validate the IP address format
-                if (!IsValidIp(WanIpEntry.Text.Trim()))
-                {
-                    await DisplayAlert("Error", "Invalid IP address format.", "OK");
-                    return;
-                }
-
-                AppState.ManualWanIp = WanIpEntry.Text.Trim();
+                    // Return to main view
+                    MainContent.IsVisible = true;
+                    CameraView.IsVisible = false;
+                    barcodeReader.IsEnabled = false;
+                });
             }
             else
             {
-                await DisplayAlert("Error", "Please select a network option.", "OK");
-                return;
+                Dispatcher.Dispatch(() =>
+                {
+                    DisplayAlert("Error", "Invalid or no IP detected. Please scan a valid QR code.", "OK");
+                });
             }
-
-            await DisplayAlert("Settings Saved", "Your network settings have been saved.", "OK");
         }
 
         // Helper method to validate an IP address
         private bool IsValidIp(string ip)
         {
-            return System.Net.IPAddress.TryParse(ip, out _);
+            return IPAddress.TryParse(ip, out _);
         }
     }
 }

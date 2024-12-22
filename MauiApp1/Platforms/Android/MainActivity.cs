@@ -30,6 +30,15 @@ namespace MauiApp1
                 }
             }
 
+            // Request camera permission
+            if ((int)Build.VERSION.SdkInt >= 23)
+            {
+                if (CheckSelfPermission(Android.Manifest.Permission.Camera) != Android.Content.PM.Permission.Granted)
+                {
+                    RequestPermissions(new[] { Android.Manifest.Permission.Camera }, 0);
+                }
+            }
+
             // Change the status bar color
             if (Build.VERSION.SdkInt >= BuildVersionCodes.Lollipop)
             {

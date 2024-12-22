@@ -10,223 +10,226 @@
     <PackageArchitecture>x64</PackageArchitecture>
     <PackageIdentityName>com.companyname.mauiapp1</PackageIdentityName>
     <PackageIdentityPublisher>CN=User Name</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\moham\Desktop\apps\good\bad\test\MauiApp1\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\moham\Desktop\Github\Fire-Detection-Client\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\</IntermediateOutputPath>
     <RemoteDeploymentType>CopyToDevice</RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>false</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\moham\Desktop\apps\good\bad\test\MauiApp1\MauiApp1\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppX</LayoutDir>
+    <LayoutDir>C:\Users\moham\Desktop\Github\Fire-Detection-Client\MauiApp1\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppX</LayoutDir>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\moham\Desktop\apps\good\bad\test\MauiApp1\MauiApp1\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\moham\Desktop\Github\Fire-Detection-Client\MauiApp1\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\moham\Desktop\apps\good\bad\test\MauiApp1\MauiApp1\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
+    <AppxPackagedFile Include="C:\Users\moham\Desktop\Github\Fire-Detection-Client\MauiApp1\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\moham\Desktop\apps\good\bad\test\MauiApp1\MauiApp1\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\MauiApp1.runtimeconfig.json">
+    <AppxPackagedFile Include="C:\Users\moham\Desktop\Github\Fire-Detection-Client\MauiApp1\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\MauiApp1.runtimeconfig.json">
       <PackagePath>MauiApp1.runtimeconfig.json</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\moham\Desktop\apps\good\bad\test\MauiApp1\MauiApp1\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\MauiApp1.dll">
+    <AppxPackagedFile Include="C:\Users\moham\Desktop\Github\Fire-Detection-Client\MauiApp1\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\MauiApp1.dll">
       <PackagePath>MauiApp1.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\moham\Desktop\apps\good\bad\test\MauiApp1\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
+    <AppxPackagedFile Include="C:\Users\moham\Desktop\Github\Fire-Detection-Client\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>MauiApp1.exe</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\moham\Desktop\apps\good\bad\test\MauiApp1\MauiApp1\Resources\Raw\AboutAssets.txt">
+    <AppxPackagedFile Include="C:\Users\moham\Desktop\Github\Fire-Detection-Client\MauiApp1\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\moham\Desktop\apps\good\bad\test\MauiApp1\MauiApp1\Resources\Raw\alarm.mp3">
+    <AppxPackagedFile Include="C:\Users\moham\Desktop\Github\Fire-Detection-Client\MauiApp1\Resources\Raw\alarm.mp3">
       <PackagePath>alarm.mp3</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\moham\Desktop\apps\good\bad\test\MauiApp1\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\ic_launcherSplashScreen.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\moham\Desktop\Github\Fire-Detection-Client\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\ic_launcherSplashScreen.scale-100.png">
       <PackagePath>ic_launcherSplashScreen.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\moham\Desktop\apps\good\bad\test\MauiApp1\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\ic_launcherSplashScreen.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\moham\Desktop\Github\Fire-Detection-Client\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\ic_launcherSplashScreen.scale-125.png">
       <PackagePath>ic_launcherSplashScreen.scale-125.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\moham\Desktop\apps\good\bad\test\MauiApp1\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\ic_launcherSplashScreen.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\moham\Desktop\Github\Fire-Detection-Client\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\ic_launcherSplashScreen.scale-150.png">
       <PackagePath>ic_launcherSplashScreen.scale-150.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\moham\Desktop\apps\good\bad\test\MauiApp1\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\ic_launcherSplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\moham\Desktop\Github\Fire-Detection-Client\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\ic_launcherSplashScreen.scale-200.png">
       <PackagePath>ic_launcherSplashScreen.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\moham\Desktop\apps\good\bad\test\MauiApp1\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\ic_launcherSplashScreen.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\moham\Desktop\Github\Fire-Detection-Client\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\ic_launcherSplashScreen.scale-400.png">
       <PackagePath>ic_launcherSplashScreen.scale-400.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\moham\Desktop\apps\good\bad\test\MauiApp1\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf">
+    <AppxPackagedFile Include="C:\Users\moham\Desktop\Github\Fire-Detection-Client\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf">
       <PackagePath>OpenSans-Regular.ttf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\moham\Desktop\apps\good\bad\test\MauiApp1\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Semibold.ttf">
+    <AppxPackagedFile Include="C:\Users\moham\Desktop\Github\Fire-Detection-Client\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Semibold.ttf">
       <PackagePath>OpenSans-Semibold.ttf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\moham\Desktop\apps\good\bad\test\MauiApp1\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\fire.scale-100.png">
-      <PackagePath>fire.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\moham\Desktop\apps\good\bad\test\MauiApp1\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\info.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\moham\Desktop\Github\Fire-Detection-Client\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\info.scale-100.png">
       <PackagePath>info.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\moham\Desktop\apps\good\bad\test\MauiApp1\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\monitor.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\moham\Desktop\Github\Fire-Detection-Client\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\monitor.scale-100.png">
       <PackagePath>monitor.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\moham\Desktop\apps\good\bad\test\MauiApp1\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ic_launcher_adaptive_backgroundLargeTile.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\moham\Desktop\Github\Fire-Detection-Client\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\fire.scale-100.png">
+      <PackagePath>fire.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\moham\Desktop\Github\Fire-Detection-Client\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\setting.scale-100.png">
+      <PackagePath>setting.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\moham\Desktop\Github\Fire-Detection-Client\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ic_launcher_adaptive_backgroundLargeTile.scale-400.png">
       <PackagePath>ic_launcher_adaptive_backgroundLargeTile.scale-400.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\moham\Desktop\apps\good\bad\test\MauiApp1\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ic_launcher_adaptive_backgroundLargeTile.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\moham\Desktop\Github\Fire-Detection-Client\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ic_launcher_adaptive_backgroundLargeTile.scale-200.png">
       <PackagePath>ic_launcher_adaptive_backgroundLargeTile.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\moham\Desktop\apps\good\bad\test\MauiApp1\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ic_launcher_adaptive_backgroundLargeTile.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\moham\Desktop\Github\Fire-Detection-Client\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ic_launcher_adaptive_backgroundLargeTile.scale-150.png">
       <PackagePath>ic_launcher_adaptive_backgroundLargeTile.scale-150.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\moham\Desktop\apps\good\bad\test\MauiApp1\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ic_launcher_adaptive_backgroundLargeTile.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\moham\Desktop\Github\Fire-Detection-Client\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ic_launcher_adaptive_backgroundLargeTile.scale-125.png">
       <PackagePath>ic_launcher_adaptive_backgroundLargeTile.scale-125.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\moham\Desktop\apps\good\bad\test\MauiApp1\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ic_launcher_adaptive_backgroundLargeTile.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\moham\Desktop\Github\Fire-Detection-Client\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ic_launcher_adaptive_backgroundLargeTile.scale-100.png">
       <PackagePath>ic_launcher_adaptive_backgroundLargeTile.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\moham\Desktop\apps\good\bad\test\MauiApp1\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ic_launcher_adaptive_backgroundWideTile.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\moham\Desktop\Github\Fire-Detection-Client\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ic_launcher_adaptive_backgroundWideTile.scale-400.png">
       <PackagePath>ic_launcher_adaptive_backgroundWideTile.scale-400.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\moham\Desktop\apps\good\bad\test\MauiApp1\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ic_launcher_adaptive_backgroundWideTile.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\moham\Desktop\Github\Fire-Detection-Client\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ic_launcher_adaptive_backgroundWideTile.scale-200.png">
       <PackagePath>ic_launcher_adaptive_backgroundWideTile.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\moham\Desktop\apps\good\bad\test\MauiApp1\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ic_launcher_adaptive_backgroundWideTile.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\moham\Desktop\Github\Fire-Detection-Client\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ic_launcher_adaptive_backgroundWideTile.scale-150.png">
       <PackagePath>ic_launcher_adaptive_backgroundWideTile.scale-150.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\moham\Desktop\apps\good\bad\test\MauiApp1\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ic_launcher_adaptive_backgroundWideTile.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\moham\Desktop\Github\Fire-Detection-Client\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ic_launcher_adaptive_backgroundWideTile.scale-125.png">
       <PackagePath>ic_launcher_adaptive_backgroundWideTile.scale-125.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\moham\Desktop\apps\good\bad\test\MauiApp1\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ic_launcher_adaptive_backgroundWideTile.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\moham\Desktop\Github\Fire-Detection-Client\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ic_launcher_adaptive_backgroundWideTile.scale-100.png">
       <PackagePath>ic_launcher_adaptive_backgroundWideTile.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\moham\Desktop\apps\good\bad\test\MauiApp1\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ic_launcher_adaptive_backgroundMediumTile.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\moham\Desktop\Github\Fire-Detection-Client\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ic_launcher_adaptive_backgroundMediumTile.scale-400.png">
       <PackagePath>ic_launcher_adaptive_backgroundMediumTile.scale-400.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\moham\Desktop\apps\good\bad\test\MauiApp1\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ic_launcher_adaptive_backgroundMediumTile.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\moham\Desktop\Github\Fire-Detection-Client\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ic_launcher_adaptive_backgroundMediumTile.scale-200.png">
       <PackagePath>ic_launcher_adaptive_backgroundMediumTile.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\moham\Desktop\apps\good\bad\test\MauiApp1\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ic_launcher_adaptive_backgroundMediumTile.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\moham\Desktop\Github\Fire-Detection-Client\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ic_launcher_adaptive_backgroundMediumTile.scale-150.png">
       <PackagePath>ic_launcher_adaptive_backgroundMediumTile.scale-150.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\moham\Desktop\apps\good\bad\test\MauiApp1\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ic_launcher_adaptive_backgroundMediumTile.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\moham\Desktop\Github\Fire-Detection-Client\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ic_launcher_adaptive_backgroundMediumTile.scale-125.png">
       <PackagePath>ic_launcher_adaptive_backgroundMediumTile.scale-125.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\moham\Desktop\apps\good\bad\test\MauiApp1\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ic_launcher_adaptive_backgroundMediumTile.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\moham\Desktop\Github\Fire-Detection-Client\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ic_launcher_adaptive_backgroundMediumTile.scale-100.png">
       <PackagePath>ic_launcher_adaptive_backgroundMediumTile.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\moham\Desktop\apps\good\bad\test\MauiApp1\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ic_launcher_adaptive_backgroundSmallTile.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\moham\Desktop\Github\Fire-Detection-Client\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ic_launcher_adaptive_backgroundSmallTile.scale-400.png">
       <PackagePath>ic_launcher_adaptive_backgroundSmallTile.scale-400.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\moham\Desktop\apps\good\bad\test\MauiApp1\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ic_launcher_adaptive_backgroundSmallTile.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\moham\Desktop\Github\Fire-Detection-Client\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ic_launcher_adaptive_backgroundSmallTile.scale-200.png">
       <PackagePath>ic_launcher_adaptive_backgroundSmallTile.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\moham\Desktop\apps\good\bad\test\MauiApp1\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ic_launcher_adaptive_backgroundSmallTile.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\moham\Desktop\Github\Fire-Detection-Client\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ic_launcher_adaptive_backgroundSmallTile.scale-150.png">
       <PackagePath>ic_launcher_adaptive_backgroundSmallTile.scale-150.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\moham\Desktop\apps\good\bad\test\MauiApp1\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ic_launcher_adaptive_backgroundSmallTile.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\moham\Desktop\Github\Fire-Detection-Client\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ic_launcher_adaptive_backgroundSmallTile.scale-125.png">
       <PackagePath>ic_launcher_adaptive_backgroundSmallTile.scale-125.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\moham\Desktop\apps\good\bad\test\MauiApp1\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ic_launcher_adaptive_backgroundSmallTile.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\moham\Desktop\Github\Fire-Detection-Client\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ic_launcher_adaptive_backgroundSmallTile.scale-100.png">
       <PackagePath>ic_launcher_adaptive_backgroundSmallTile.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\moham\Desktop\apps\good\bad\test\MauiApp1\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ic_launcher_adaptive_backgroundStoreLogo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\moham\Desktop\Github\Fire-Detection-Client\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ic_launcher_adaptive_backgroundStoreLogo.scale-400.png">
       <PackagePath>ic_launcher_adaptive_backgroundStoreLogo.scale-400.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\moham\Desktop\apps\good\bad\test\MauiApp1\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ic_launcher_adaptive_backgroundStoreLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\moham\Desktop\Github\Fire-Detection-Client\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ic_launcher_adaptive_backgroundStoreLogo.scale-200.png">
       <PackagePath>ic_launcher_adaptive_backgroundStoreLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\moham\Desktop\apps\good\bad\test\MauiApp1\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ic_launcher_adaptive_backgroundStoreLogo.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\moham\Desktop\Github\Fire-Detection-Client\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ic_launcher_adaptive_backgroundStoreLogo.scale-150.png">
       <PackagePath>ic_launcher_adaptive_backgroundStoreLogo.scale-150.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\moham\Desktop\apps\good\bad\test\MauiApp1\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ic_launcher_adaptive_backgroundStoreLogo.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\moham\Desktop\Github\Fire-Detection-Client\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ic_launcher_adaptive_backgroundStoreLogo.scale-125.png">
       <PackagePath>ic_launcher_adaptive_backgroundStoreLogo.scale-125.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\moham\Desktop\apps\good\bad\test\MauiApp1\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ic_launcher_adaptive_backgroundStoreLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\moham\Desktop\Github\Fire-Detection-Client\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ic_launcher_adaptive_backgroundStoreLogo.scale-100.png">
       <PackagePath>ic_launcher_adaptive_backgroundStoreLogo.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\moham\Desktop\apps\good\bad\test\MauiApp1\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ic_launcher_adaptive_backgroundLogo.altform-lightunplated_targetsize-256.png">
+    <AppxPackagedFile Include="C:\Users\moham\Desktop\Github\Fire-Detection-Client\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ic_launcher_adaptive_backgroundLogo.altform-lightunplated_targetsize-256.png">
       <PackagePath>ic_launcher_adaptive_backgroundLogo.altform-lightunplated_targetsize-256.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\moham\Desktop\apps\good\bad\test\MauiApp1\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ic_launcher_adaptive_backgroundLogo.altform-lightunplated_targetsize-48.png">
+    <AppxPackagedFile Include="C:\Users\moham\Desktop\Github\Fire-Detection-Client\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ic_launcher_adaptive_backgroundLogo.altform-lightunplated_targetsize-48.png">
       <PackagePath>ic_launcher_adaptive_backgroundLogo.altform-lightunplated_targetsize-48.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\moham\Desktop\apps\good\bad\test\MauiApp1\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ic_launcher_adaptive_backgroundLogo.altform-lightunplated_targetsize-32.png">
+    <AppxPackagedFile Include="C:\Users\moham\Desktop\Github\Fire-Detection-Client\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ic_launcher_adaptive_backgroundLogo.altform-lightunplated_targetsize-32.png">
       <PackagePath>ic_launcher_adaptive_backgroundLogo.altform-lightunplated_targetsize-32.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\moham\Desktop\apps\good\bad\test\MauiApp1\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ic_launcher_adaptive_backgroundLogo.altform-lightunplated_targetsize-24.png">
+    <AppxPackagedFile Include="C:\Users\moham\Desktop\Github\Fire-Detection-Client\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ic_launcher_adaptive_backgroundLogo.altform-lightunplated_targetsize-24.png">
       <PackagePath>ic_launcher_adaptive_backgroundLogo.altform-lightunplated_targetsize-24.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\moham\Desktop\apps\good\bad\test\MauiApp1\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ic_launcher_adaptive_backgroundLogo.altform-lightunplated_targetsize-16.png">
+    <AppxPackagedFile Include="C:\Users\moham\Desktop\Github\Fire-Detection-Client\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ic_launcher_adaptive_backgroundLogo.altform-lightunplated_targetsize-16.png">
       <PackagePath>ic_launcher_adaptive_backgroundLogo.altform-lightunplated_targetsize-16.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\moham\Desktop\apps\good\bad\test\MauiApp1\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ic_launcher_adaptive_backgroundLogo.altform-unplated_targetsize-256.png">
+    <AppxPackagedFile Include="C:\Users\moham\Desktop\Github\Fire-Detection-Client\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ic_launcher_adaptive_backgroundLogo.altform-unplated_targetsize-256.png">
       <PackagePath>ic_launcher_adaptive_backgroundLogo.altform-unplated_targetsize-256.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\moham\Desktop\apps\good\bad\test\MauiApp1\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ic_launcher_adaptive_backgroundLogo.altform-unplated_targetsize-48.png">
+    <AppxPackagedFile Include="C:\Users\moham\Desktop\Github\Fire-Detection-Client\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ic_launcher_adaptive_backgroundLogo.altform-unplated_targetsize-48.png">
       <PackagePath>ic_launcher_adaptive_backgroundLogo.altform-unplated_targetsize-48.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\moham\Desktop\apps\good\bad\test\MauiApp1\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ic_launcher_adaptive_backgroundLogo.altform-unplated_targetsize-32.png">
+    <AppxPackagedFile Include="C:\Users\moham\Desktop\Github\Fire-Detection-Client\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ic_launcher_adaptive_backgroundLogo.altform-unplated_targetsize-32.png">
       <PackagePath>ic_launcher_adaptive_backgroundLogo.altform-unplated_targetsize-32.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\moham\Desktop\apps\good\bad\test\MauiApp1\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ic_launcher_adaptive_backgroundLogo.altform-unplated_targetsize-24.png">
+    <AppxPackagedFile Include="C:\Users\moham\Desktop\Github\Fire-Detection-Client\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ic_launcher_adaptive_backgroundLogo.altform-unplated_targetsize-24.png">
       <PackagePath>ic_launcher_adaptive_backgroundLogo.altform-unplated_targetsize-24.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\moham\Desktop\apps\good\bad\test\MauiApp1\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ic_launcher_adaptive_backgroundLogo.altform-unplated_targetsize-16.png">
+    <AppxPackagedFile Include="C:\Users\moham\Desktop\Github\Fire-Detection-Client\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ic_launcher_adaptive_backgroundLogo.altform-unplated_targetsize-16.png">
       <PackagePath>ic_launcher_adaptive_backgroundLogo.altform-unplated_targetsize-16.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\moham\Desktop\apps\good\bad\test\MauiApp1\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ic_launcher_adaptive_backgroundLogo.targetsize-256.png">
+    <AppxPackagedFile Include="C:\Users\moham\Desktop\Github\Fire-Detection-Client\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ic_launcher_adaptive_backgroundLogo.targetsize-256.png">
       <PackagePath>ic_launcher_adaptive_backgroundLogo.targetsize-256.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\moham\Desktop\apps\good\bad\test\MauiApp1\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ic_launcher_adaptive_backgroundLogo.targetsize-48.png">
+    <AppxPackagedFile Include="C:\Users\moham\Desktop\Github\Fire-Detection-Client\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ic_launcher_adaptive_backgroundLogo.targetsize-48.png">
       <PackagePath>ic_launcher_adaptive_backgroundLogo.targetsize-48.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\moham\Desktop\apps\good\bad\test\MauiApp1\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ic_launcher_adaptive_backgroundLogo.targetsize-32.png">
+    <AppxPackagedFile Include="C:\Users\moham\Desktop\Github\Fire-Detection-Client\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ic_launcher_adaptive_backgroundLogo.targetsize-32.png">
       <PackagePath>ic_launcher_adaptive_backgroundLogo.targetsize-32.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\moham\Desktop\apps\good\bad\test\MauiApp1\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ic_launcher_adaptive_backgroundLogo.targetsize-24.png">
+    <AppxPackagedFile Include="C:\Users\moham\Desktop\Github\Fire-Detection-Client\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ic_launcher_adaptive_backgroundLogo.targetsize-24.png">
       <PackagePath>ic_launcher_adaptive_backgroundLogo.targetsize-24.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\moham\Desktop\apps\good\bad\test\MauiApp1\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ic_launcher_adaptive_backgroundLogo.targetsize-16.png">
+    <AppxPackagedFile Include="C:\Users\moham\Desktop\Github\Fire-Detection-Client\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ic_launcher_adaptive_backgroundLogo.targetsize-16.png">
       <PackagePath>ic_launcher_adaptive_backgroundLogo.targetsize-16.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\moham\Desktop\apps\good\bad\test\MauiApp1\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ic_launcher_adaptive_backgroundLogo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\moham\Desktop\Github\Fire-Detection-Client\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ic_launcher_adaptive_backgroundLogo.scale-400.png">
       <PackagePath>ic_launcher_adaptive_backgroundLogo.scale-400.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\moham\Desktop\apps\good\bad\test\MauiApp1\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ic_launcher_adaptive_backgroundLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\moham\Desktop\Github\Fire-Detection-Client\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ic_launcher_adaptive_backgroundLogo.scale-200.png">
       <PackagePath>ic_launcher_adaptive_backgroundLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\moham\Desktop\apps\good\bad\test\MauiApp1\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ic_launcher_adaptive_backgroundLogo.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\moham\Desktop\Github\Fire-Detection-Client\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ic_launcher_adaptive_backgroundLogo.scale-150.png">
       <PackagePath>ic_launcher_adaptive_backgroundLogo.scale-150.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\moham\Desktop\apps\good\bad\test\MauiApp1\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ic_launcher_adaptive_backgroundLogo.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\moham\Desktop\Github\Fire-Detection-Client\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ic_launcher_adaptive_backgroundLogo.scale-125.png">
       <PackagePath>ic_launcher_adaptive_backgroundLogo.scale-125.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\moham\Desktop\apps\good\bad\test\MauiApp1\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ic_launcher_adaptive_backgroundLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\moham\Desktop\Github\Fire-Detection-Client\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ic_launcher_adaptive_backgroundLogo.scale-100.png">
       <PackagePath>ic_launcher_adaptive_backgroundLogo.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\moham\Desktop\apps\good\bad\test\MauiApp1\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ic_launcher_adaptive_background.ico">
+    <AppxPackagedFile Include="C:\Users\moham\Desktop\Github\Fire-Detection-Client\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ic_launcher_adaptive_background.ico">
       <PackagePath>ic_launcher_adaptive_background.ico</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\moham\Desktop\apps\good\bad\test\MauiApp1\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\moham\Desktop\Github\Fire-Detection-Client\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\moham\Desktop\apps\good\bad\test\MauiApp1\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\moham\Desktop\Github\Fire-Detection-Client\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
       <PackagePath>dotnet_bot.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\moham\Desktop\apps\good\bad\test\MauiApp1\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\moham\Desktop\Github\Fire-Detection-Client\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
       <PackagePath>dotnet_bot.scale-150.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\moham\Desktop\apps\good\bad\test\MauiApp1\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\moham\Desktop\Github\Fire-Detection-Client\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
       <PackagePath>dotnet_bot.scale-125.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\moham\Desktop\apps\good\bad\test\MauiApp1\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\moham\Desktop\Github\Fire-Detection-Client\MauiApp1\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
       <PackagePath>dotnet_bot.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\moham\Desktop\apps\good\bad\test\MauiApp1\MauiApp1\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\MauiApp1.deps.json">
+    <AppxPackagedFile Include="C:\Users\moham\Desktop\Github\Fire-Detection-Client\MauiApp1\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\MauiApp1.deps.json">
       <PackagePath>MauiApp1.deps.json</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\moham\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.44\lib\net8.0\Microsoft.Windows.SDK.NET.dll">
@@ -456,6 +459,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\moham\.nuget\packages\websocket.client\5.1.2\lib\net8.0\Websocket.Client.dll">
       <PackagePath>Websocket.Client.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\moham\.nuget\packages\zxing.net\0.16.9\lib\net7.0\zxing.dll">
+      <PackagePath>zxing.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\moham\.nuget\packages\zxing.net.maui\0.4.0\lib\net7.0-windows10.0.19041\ZXing.Net.MAUI.dll">
+      <PackagePath>ZXing.Net.MAUI.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\moham\.nuget\packages\zxing.net.maui.controls\0.4.0\lib\net7.0-windows10.0.19041\ZXing.Net.MAUI.Controls.dll">
+      <PackagePath>ZXing.Net.MAUI.Controls.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\moham\.nuget\packages\microsoft.maui.controls.core\8.0.82\lib\net8.0-windows10.0.19041\ar\Microsoft.Maui.Controls.resources.dll">
       <PackagePath>ar\Microsoft.Maui.Controls.resources.dll</PackagePath>
