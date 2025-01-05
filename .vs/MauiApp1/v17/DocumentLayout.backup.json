@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\moham\\Desktop\\Github\\Fire-Detection-Client\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4024FB7A-F61E-44B4-8424-355040ECCCAE}|MauiApp1\\MauiApp1.csproj|c:\\users\\moham\\desktop\\github\\fire-detection-client\\mauiapp1\\settingspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4024FB7A-F61E-44B4-8424-355040ECCCAE}|MauiApp1\\MauiApp1.csproj|solutionrelative:mauiapp1\\settingspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4024FB7A-F61E-44B4-8424-355040ECCCAE}|MauiApp1\\MauiApp1.csproj|c:\\users\\moham\\desktop\\github\\fire-detection-client\\mauiapp1\\mauiapp1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{4024FB7A-F61E-44B4-8424-355040ECCCAE}|MauiApp1\\MauiApp1.csproj|solutionrelative:mauiapp1\\mauiapp1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4024FB7A-F61E-44B4-8424-355040ECCCAE}|MauiApp1\\MauiApp1.csproj|c:\\users\\moham\\desktop\\github\\fire-detection-client\\mauiapp1\\settingspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{4024FB7A-F61E-44B4-8424-355040ECCCAE}|MauiApp1\\MauiApp1.csproj|solutionrelative:mauiapp1\\settingspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4024FB7A-F61E-44B4-8424-355040ECCCAE}|MauiApp1\\MauiApp1.csproj|c:\\users\\moham\\desktop\\github\\fire-detection-client\\mauiapp1\\settingspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4024FB7A-F61E-44B4-8424-355040ECCCAE}|MauiApp1\\MauiApp1.csproj|solutionrelative:mauiapp1\\settingspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4024FB7A-F61E-44B4-8424-355040ECCCAE}|MauiApp1\\MauiApp1.csproj|c:\\users\\moham\\desktop\\github\\fire-detection-client\\mauiapp1\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -74,11 +78,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
+              "Title": "MauiApp1",
+              "DocumentMoniker": "C:\\Users\\moham\\Desktop\\Github\\Fire-Detection-Client\\MauiApp1\\MauiApp1.csproj",
+              "RelativeDocumentMoniker": "MauiApp1\\MauiApp1.csproj",
+              "ToolTip": "C:\\Users\\moham\\Desktop\\Github\\Fire-Detection-Client\\MauiApp1\\MauiApp1.csproj",
+              "RelativeToolTip": "MauiApp1\\MauiApp1.csproj",
+              "ViewState": "AgIAAFIAAAAAAAAAAAAkwHAAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-01-05T16:54:40.543Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "AndroidManifest.xml",
               "DocumentMoniker": "C:\\Users\\moham\\Desktop\\Github\\Fire-Detection-Client\\MauiApp1\\Platforms\\Android\\AndroidManifest.xml",
               "RelativeDocumentMoniker": "MauiApp1\\Platforms\\Android\\AndroidManifest.xml",
@@ -90,7 +107,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "MauiProgram.cs",
               "DocumentMoniker": "C:\\Users\\moham\\Desktop\\Github\\Fire-Detection-Client\\MauiApp1\\MauiProgram.cs",
               "RelativeDocumentMoniker": "MauiApp1\\MauiProgram.cs",
@@ -102,7 +119,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "Colors.xaml",
               "DocumentMoniker": "C:\\Users\\moham\\Desktop\\Github\\Fire-Detection-Client\\MauiApp1\\Resources\\Styles\\Colors.xaml",
               "RelativeDocumentMoniker": "MauiApp1\\Resources\\Styles\\Colors.xaml",
@@ -114,7 +131,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "App.xaml.cs",
               "DocumentMoniker": "C:\\Users\\moham\\Desktop\\Github\\Fire-Detection-Client\\MauiApp1\\App.xaml.cs",
               "RelativeDocumentMoniker": "MauiApp1\\App.xaml.cs",
@@ -126,20 +143,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "SettingsPage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\moham\\Desktop\\Github\\Fire-Detection-Client\\MauiApp1\\SettingsPage.xaml.cs",
               "RelativeDocumentMoniker": "MauiApp1\\SettingsPage.xaml.cs",
               "ToolTip": "C:\\Users\\moham\\Desktop\\Github\\Fire-Detection-Client\\MauiApp1\\SettingsPage.xaml.cs",
               "RelativeToolTip": "MauiApp1\\SettingsPage.xaml.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAAAowE0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACkAAAAAAAAAAAAIwE0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-21T18:19:45.664Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-21T18:19:45.664Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "AppShell.xaml",
               "DocumentMoniker": "C:\\Users\\moham\\Desktop\\Github\\Fire-Detection-Client\\MauiApp1\\AppShell.xaml",
               "RelativeDocumentMoniker": "MauiApp1\\AppShell.xaml",
@@ -151,7 +167,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "AppState.cs",
               "DocumentMoniker": "C:\\Users\\moham\\Desktop\\Github\\Fire-Detection-Client\\MauiApp1\\AppState.cs",
               "RelativeDocumentMoniker": "MauiApp1\\AppState.cs",
@@ -167,16 +183,16 @@
               "Title": "SettingsPage.xaml",
               "DocumentMoniker": "C:\\Users\\moham\\Desktop\\Github\\Fire-Detection-Client\\MauiApp1\\SettingsPage.xaml",
               "RelativeDocumentMoniker": "MauiApp1\\SettingsPage.xaml",
-              "ToolTip": "C:\\Users\\moham\\Desktop\\Github\\Fire-Detection-Client\\MauiApp1\\SettingsPage.xaml*",
-              "RelativeToolTip": "MauiApp1\\SettingsPage.xaml*",
-              "ViewState": "AgIAAL0AAAAAAAAAAAAAAM0AAAA3AAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\moham\\Desktop\\Github\\Fire-Detection-Client\\MauiApp1\\SettingsPage.xaml",
+              "RelativeToolTip": "MauiApp1\\SettingsPage.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-12-21T18:16:43.781Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "MainActivity.cs",
               "DocumentMoniker": "C:\\Users\\moham\\Desktop\\Github\\Fire-Detection-Client\\MauiApp1\\Platforms\\Android\\MainActivity.cs",
               "RelativeDocumentMoniker": "MauiApp1\\Platforms\\Android\\MainActivity.cs",
@@ -188,7 +204,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "MainPage.xaml",
               "DocumentMoniker": "C:\\Users\\moham\\Desktop\\Github\\Fire-Detection-Client\\MauiApp1\\MainPage.xaml",
               "RelativeDocumentMoniker": "MauiApp1\\MainPage.xaml",
@@ -200,7 +216,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "App.xaml",
               "DocumentMoniker": "C:\\Users\\moham\\Desktop\\Github\\Fire-Detection-Client\\MauiApp1\\App.xaml",
               "RelativeDocumentMoniker": "MauiApp1\\App.xaml",
@@ -212,7 +228,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "MainPage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\moham\\Desktop\\Github\\Fire-Detection-Client\\MauiApp1\\MainPage.xaml.cs",
               "RelativeDocumentMoniker": "MauiApp1\\MainPage.xaml.cs",
@@ -224,7 +240,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "StatusPage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\moham\\Desktop\\Github\\Fire-Detection-Client\\MauiApp1\\StatusPage.xaml.cs",
               "RelativeDocumentMoniker": "MauiApp1\\StatusPage.xaml.cs",
@@ -236,7 +252,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "BackgroundNotificationService.cs",
               "DocumentMoniker": "C:\\Users\\moham\\Desktop\\Github\\Fire-Detection-Client\\MauiApp1\\Platforms\\Android\\BackgroundNotificationService.cs",
               "RelativeDocumentMoniker": "MauiApp1\\Platforms\\Android\\BackgroundNotificationService.cs",
@@ -248,7 +264,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "colors.xml",
               "DocumentMoniker": "C:\\Users\\moham\\Desktop\\Github\\Fire-Detection-Client\\MauiApp1\\Platforms\\Android\\Resources\\values\\colors.xml",
               "RelativeDocumentMoniker": "MauiApp1\\Platforms\\Android\\Resources\\values\\colors.xml",
@@ -260,7 +276,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "StatusPage.xaml",
               "DocumentMoniker": "C:\\Users\\moham\\Desktop\\Github\\Fire-Detection-Client\\MauiApp1\\StatusPage.xaml",
               "RelativeDocumentMoniker": "MauiApp1\\StatusPage.xaml",
