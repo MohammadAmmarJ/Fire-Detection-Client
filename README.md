@@ -8,8 +8,7 @@ The **Fire Detection Client** is a mobile application built using **.NET MAUI** 
 
 - 🔥 **Real-time Fire Detection Alerts**
 - 📊 **Detection History & Logs**
-- 📍 **Location-Based Notifications**
-- ⚙ **Customizable Alert Settings**
+- 🔔 **Notification Alerts**
 - 📡 **Integration with Cloud Backend**
 
 ## 🛠 Installation & Setup
