@@ -46,7 +46,8 @@ Ensure you have the following installed:
 
 ## 📞 Contact
 
-- 📧 Email: [mohammadammarga@gmail.com](mailto\:your-email@example.com)
+- 📧 Email: [mohammadammarga@gmail.com](mailto\:mohammadammarga@gmail.com)
+- 📧 Email: [amroadnanb@gmail.com](mailto\:amroadnanb@gmail.com)
 
 
 
